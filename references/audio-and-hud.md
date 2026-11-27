@@ -27,7 +27,8 @@ Design a refined, non-intrusive HUD that lets the artwork breathe on both deskto
   - `Pause [Space]`
   - `Audio [M]`
   - `Hide [H]` (fades HUD completely; shows subtle `HUD hidden — press H to restore` pill)
-- **Collapsible Controls Drawer (`320px` desktop side sheet → bottom sheet on `<= 680px`):**
+- **Collapsible & Draggable Controls Drawer (`320px` desktop side sheet → bottom sheet on `<= 680px`):**
+  - **Header-Only Dragging (Desktop `> 680px`):** Subtle `⋮⋮` grip + `grab`/`grabbing` cursor on `.drawer-header`, viewport-clamped (`12px` margin on drag and window resize), `stopPropagation()` so dragging never steers the 3D camera underneath, and double-click header (or `Reset Defaults`) to snap back to top-right. Disabled on mobile bottom-sheet (`<= 680px`).
   - **4 Director Mood Presets** tailored to the scene (e.g., balanced default, storm/overcharge, quiet midnight, warm glow/inferno).
   - **5 Atmosphere Sliders** (`0.00×` to `2.00×`, default `1.00×`, live monospace readout).
   - **Camera Steering Toggle:** `Cinematic Drift` (gentle default figure-eight orbit + relaxing pointer drag) vs. `Mouse Parallax`.

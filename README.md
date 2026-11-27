@@ -59,7 +59,7 @@ flowchart LR
 | **2. Local AI Depth & Plates** | Runs `Depth-Anything-V2` locally (Apple Silicon MPS / CUDA / CPU) + OpenCV RGB-guided edge filtering + `rembg` (`isnet-general-use`) + 14 px RGB edge-bleed dilation + multi-scale Telea backdrop inpainting (`scripts/pipeline_template.py`). |
 | **3. Color-True WebGL2 Engine** | Perspective-locked depth cards scaled by exact `(d - z) / d` with `SRGBColorSpace` + `NoToneMapping`, 5-tap neighborhood-clamped CAS sharpening, `128×72` Live2D breathing/head-pivot/gaze/3-stage blinking, tactile cloth springs, and selective multi-mask bloom. |
 | **4. GPU Wave PDE & Particles** | Real-time `256×256` `HalfFloatType` ping-pong 2D wave solver with reflective Neumann boundaries (puddle ripples, water reflections, or arcane air distortion) + depth-stratified GPU particles with cursor swirl. |
-| **5. Spatial Audio & Cinema HUD** | 100% Web Audio API stereo soundscape linked to camera parallax, smoked-glass HUD with 4 mood presets, 5 atmosphere sliders, draggable **Before/After Split-Compare Curtain** (`C`), 6-mode **Layer & Mask Inspector** (`D`), and mobile bottom-sheet support. |
+| **5. Spatial Audio & Cinema HUD** | 100% Web Audio API stereo soundscape linked to camera parallax, draggable smoked-glass HUD (double-click header to snap back) with 4 mood presets, 5 atmosphere sliders, draggable **Before/After Split-Compare Curtain** (`C`), 6-mode **Layer & Mask Inspector** (`D`), and mobile bottom-sheet support. |
 
 ---
 
